@@ -4,16 +4,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "Iso18013mdl-SDK",
-    platforms: [
-        .iOS(.v17)
-        ],
-    
+    name: "ISOMDLLib",
+    platforms: [.iOS(.v17)],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
+        // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
-            name: "Iso18013mdl-SDK",
-            targets: ["Iso18013mdl-SDK"]),
+            name: "ISOMDLLib",
+            targets: ["ISOMDLLib"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -24,7 +21,7 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .binaryTarget(name: "Iso18013mdl-SDK", url: "https://storage.googleapis.com/cosmo-ios-repo/ISOMDLLib.xcframework.zip", checksum: "9e08725b0b113763dea5d77debee01eac57606a8b55bd5ecae37604cd1a60197"),
+        .binaryTarget(name: "ISOMDLLib", url: "https://storage.googleapis.com/cosmo-ios-repo/ISOMDLLib.xcframework.zip", checksum: "9e08725b0b113763dea5d77debee01eac57606a8b55bd5ecae37604cd1a60197"),
        
     ]
 )
