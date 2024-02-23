@@ -15,7 +15,12 @@ let package = Package(
             name: "Iso18013mdl-SDK",
             targets: ["Iso18013mdl-SDK"]),
     ],
-    
+    dependencies: [
+        // Dependencies declare other packages that this package depends on.
+        .package(url: "https://github.com/SwiftyJSON/SwiftyJSON", from: "5.0.0"),
+        .package(url: "https://github.com/valpackett/SwiftCBOR", from: "0.4.6"),
+        .package(url: "https://github.com/auth0/JWTDecode.swift.git", from: "3.1.0")
+    ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
