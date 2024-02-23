@@ -22,8 +22,14 @@ let package = Package(
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .binaryTarget(name: "ISOMDLLib", 
-                      dependencies: ["SwiftyJSON", "SwiftCBOR", .product(name: "JWTDecode", package: "jwtdecode.swift")],
-                      url: "https://storage.googleapis.com/cosmo-ios-repo/ISOMDLLib.xcframework.zip", checksum: "9e08725b0b113763dea5d77debee01eac57606a8b55bd5ecae37604cd1a60197"),
+                      url: "https://storage.googleapis.com/cosmo-ios-repo/ISOMDLLib.xcframework.zip", 
+                      checksum: "9e08725b0b113763dea5d77debee01eac57606a8b55bd5ecae37604cd1a60197"
+                     ),
+        .target(
+            name: "ISOMDLLib",
+            dependencies: ["SwiftyJSON", "SwiftCBOR", .product(name: "JWTDecode", package: "jwtdecode.swift")],
+            path: "ISOMDLLib"),
+
        
     ]
 )
