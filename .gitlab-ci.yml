@@ -1,7 +1,8 @@
 stages:
-    - publish
+    - build
 
-  stage: publish
+editgithub:
+  stage: build
   script:
     - cat artifact.txt
   needs:
