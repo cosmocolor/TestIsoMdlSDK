@@ -4,9 +4,5 @@ stages:
 editgithub:
   stage: build
   script:
+    - echo $COSMOCOMMIT
     - cat artifact.txt
-  needs:
-    - project: ios/isomdl-sdk
-      job: test_archivo
-      ref: main
-      artifacts: true
