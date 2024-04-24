@@ -6,3 +6,5 @@ editgithub:
   script:
     - echo $COSMOCOMMIT
     - cat artifact.txt
+  tags:
+        - macos
