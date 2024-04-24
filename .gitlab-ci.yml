@@ -5,5 +5,6 @@ editgithub:
   stage: build
   script:
     - echo $G_COMMIT
+    - echo $G_CHECK
   tags:
         - macos
