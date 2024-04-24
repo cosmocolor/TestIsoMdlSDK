@@ -4,7 +4,6 @@ stages:
 editgithub:
   stage: build
   script:
-    - echo $COSMOCOMMIT
-    - cat artifact.txt
+    - echo $G_COMMIT
   tags:
         - macos
