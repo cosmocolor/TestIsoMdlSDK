@@ -7,5 +7,6 @@ editgithub:
     - cat artifact.txt
   needs:
     - project: ios/isomdl-sdk
-      job: test_trigger_otro
+      job: test_archivo
+      ref: main
       artifacts: true
