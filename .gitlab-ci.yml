@@ -1,0 +1,10 @@
+stages:
+    - publish
+
+  stage: publish
+  script:
+    - cat artifact.txt
+  needs:
+    - project: ios/isomdl-sdk
+      job: test_trigger_otro
+      artifacts: true
