@@ -4,10 +4,9 @@ stages:
 editgithub:
   stage: build
   script:
-    - echo $G_COMMIT > var1.txt
-    - echo $G_CHECK > var2.txt
     - export JOB_PATH=$(pwd)
-    - echo $JOB_PATH > var3.txt
     - '/Users/ec2-user/CambiaSwift $G_COMMIT $G_CHECK "$JOB_PATH/Package.swift"'
+    - git commit -m "$G_COMMIT"
+    - git push origin HEAD:master
   tags:
         - macos
