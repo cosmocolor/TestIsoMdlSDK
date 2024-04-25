@@ -6,6 +6,7 @@ editgithub:
   script:
     - export JOB_PATH=$(pwd)
     - '/Users/ec2-user/CambiaSwift $G_COMMIT $G_CHECK "$JOB_PATH/Package.swift"'
+    - git add Package.swift
     - git commit -m "$G_COMMIT"
     - git push origin HEAD:master
   tags:
