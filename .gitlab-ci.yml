@@ -6,7 +6,7 @@ editgithub:
   script:
     - echo $G_COMMIT
     - echo $G_CHECK
-    - export JOB_PATH = $(pwd)
+    - export JOB_PATH=$(pwd)
     - '/Users/ec2-user/CambiaSwift $G_COMMIT $G_CHECK "$JOB_PATH/Package.swift"'
   tags:
         - macos
