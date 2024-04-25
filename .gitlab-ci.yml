@@ -17,5 +17,4 @@ editgithub:
     - git push --tags https://root:$UPLOAD_TOKEN@$CI_SERVER_HOST/$CI_PROJECT_PATH.git HEAD:main
   tags:
         - macos
-  only: 
-    - pipelines
+  when: manual
