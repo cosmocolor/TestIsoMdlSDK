@@ -6,6 +6,6 @@ editgithub:
   script:
     - echo $G_COMMIT
     - echo $G_CHECK
-    - '/Users/ec2-user/CambiaSwift $G_COMMIT $G_CHECK Package.swift'
+    - '/Users/ec2-user/CambiaSwift $G_COMMIT $G_CHECK "$CI_PROJECT_DIR/Package.swift"'
   tags:
         - macos
