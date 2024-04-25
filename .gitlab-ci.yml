@@ -18,4 +18,4 @@ editgithub:
   tags:
         - macos
   only: 
-    - api
+    - pipelines
